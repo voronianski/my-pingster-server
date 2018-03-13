@@ -1,0 +1,49 @@
+{
+  "name": "@zenmate/pingster-server",
+  "version": "1.0.3",
+  "description": "API and scheduled Pingster test runner for your GitHub projects.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src",
+    "watch": "nodemon ./src -w ./src -e js,json",
+    "start-secure": "node ./bin/runSecureEnvs",
+    "watch-secure": "nodemon ./bin/runSecureEnvs -w ./src -e js,json",
+    "lint": "eslint ./src",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenmate/pingster-server.git"
+  },
+  "author": "ZenMate Team",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/zenmate/pingster-server/issues"
+  },
+  "homepage": "https://github.com/zenmate/pingster-server#readme",
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.5.0"
+  },
+  "dependencies": {
+    "append-query": "^2.0.1",
+    "async": "^2.6.0",
+    "aws-sdk": "^2.201.0",
+    "c0nfig": "^0.2.2",
+    "compression": "^1.7.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "github-api": "^3.0.0",
+    "lodash.intersectionby": "^4.7.0",
+    "mongojs": "^2.5.0",
+    "morgan": "^1.9.0",
+    "node-cache": "^4.1.1",
+    "pingster": "^1.0.5",
+    "superagent": "^3.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "nodemon": "^1.14.11"
+  }
+}
